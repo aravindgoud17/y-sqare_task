@@ -1,0 +1,31 @@
+ion-card {
+  padding: 25px;
+  margin: 0%;
+}
+
+.card_data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ion-icon{
+      font-size: 4vw;
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+  .tr_heading {
+    background: #e3dede;
+  }
+}
+
+td,th {
+  // border: 1px solid #dddddd;
+  text-align: center;
+
+  padding: 8px;
+}

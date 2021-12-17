@@ -1,0 +1,129 @@
+    
+<ion-grid style="background-color: whitesmoke; overflow: auto;padding: 0 6%;">
+    <!-- content headings -->
+    <ion-row>
+        <ion-col size="12" style="padding:0%;">
+            <div>
+                <p>Overview</p>
+            </div>
+        </ion-col>
+    </ion-row>
+    <!--cards and card content  -->
+  <ion-row >
+  
+    <ion-col size="4" size-lg="4" size-md="6" size-sm="12" size-xs="12">
+      
+      <ion-card>
+        <p>Total Views</p>
+        <div class="card_data">
+          <div>
+            <p><b>267k</b></p>
+            <p>13.8%</p>
+          </div>
+          <div style="color: rgb(76, 247, 232);">
+            <ion-icon name="stats-chart-outline"></ion-icon>
+            <ion-icon name="stats-chart-outline"></ion-icon>
+            <ion-icon name="stats-chart-outline"></ion-icon>
+          </div>
+        </div>
+      </ion-card>
+    </ion-col>
+    <ion-col size="4" size-lg="4" size-md="6" size-sm="12" size-xs="12">
+     
+      <ion-card>
+        <p>Total Views</p>
+        <div class="card_data">
+          <div>
+            <p><b>267k</b></p>
+            <p>13.8%</p>
+          </div>
+          <div style="color: rgb(134, 159, 241);">
+            <ion-icon name="stats-chart-outline"></ion-icon>
+            <ion-icon name="stats-chart-outline"></ion-icon>
+            <ion-icon name="stats-chart-outline"></ion-icon>
+          </div>
+        </div>
+      </ion-card>
+    </ion-col>
+    <ion-col size="4" size-lg="4" size-md="6" size-sm="12" size-xs="12">
+      
+      <ion-card>
+        <p>Total Views</p>
+        <div class="card_data">
+          <div>
+            <p><b>267k</b></p>
+            <p>13.8%</p>
+          </div>
+          <div style="color: greenyellow;">
+            <ion-icon name="stats-chart-outline"></ion-icon>
+            <ion-icon name="stats-chart-outline"></ion-icon>
+            <ion-icon name="stats-chart-outline"></ion-icon>
+          </div>
+        </div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+<!--  statastics info-->
+  <ion-row>
+    <ion-col size="12" size-lg="12" size-md="12" size-sm="12" size-xs="12">
+      <ion-card style="height: 44vh;">
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <h3>Stastics</h3>
+            </div>
+            <div>
+                <!-- <ion-content> -->
+                    <ion-list>
+                        <ion-item>
+                            <ion-select  interface="popover">
+                              <ion-select-option value="Last 3 Months">Last 3 Months</ion-select-option>
+                              <ion-select-option value="Last 6 Months">Last 6 Months</ion-select-option>
+                              <ion-select-option value="Last 8 Months">Last 9 Months</ion-select-option>
+                              <ion-select-option value="Last 12 Months">Last 12 Months</ion-select-option>
+                            </ion-select>
+                          </ion-item>
+                    </ion-list>
+                <!-- </ion-content> -->
+                
+            </div>
+        </div>
+        
+      
+        <div style="display: block; width: 70vw ; " >
+          <canvas  height="50vh" baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+            [legend]="lineChartLegend" [chartType]="lineChartType" [plugins]="lineChartPlugins">
+          </canvas>
+        </div>
+    </ion-card> 
+    </ion-col>
+  </ion-row>
+  <!-- tabble info and google map -->
+  <ion-row>
+      <!-- table info -->
+      <ion-col size="8" size-lg="8" size-md="8" size-sm="12" size-xs="12">
+          <ion-card>
+              <div style="overflow: auto;">
+                  <table>
+                      <tr class="tr_heading">
+                          <th>LOCATION</th>
+                          <th>VIEW</th>
+                          <th>SALES</th>
+                          <th>CONVERSION</th>
+                          <th>TOTAL</th>
+                      </tr>
+                      <tr>
+                          <td>google.com</td>
+                          <td>3746</td>
+                          <td>752</td>
+                          <td>43%</td>
+                          <td>$19,291</td>
+                      </tr>
+                  </table>
+              </div>
+          </ion-card>
+      </ion-col>
+      <ion-col>
+          
+    </ion-col>
+  </ion-row>
+</ion-grid>
